@@ -34,7 +34,7 @@ This tableau story brings together all the analysis & visualisation done on tabl
 We analyzed most recent data, 1 year record of all rides amounting to over 5million records. Data was stored in monthly sets as csv files on the company’s extraction site.  Due to the large amount of data for each month exceeding Excel and Power query’s capacity that informed the decision to use SQL, especially for appending all data, cleaning, and transformation for analysis. Further more selecting Tableau to be efficient with time spent on analysis and visualisation. Just to caveat that these data is currently open sourced hence why I can share and talk about this on my portfolio. 
 
 ## Data Preparation, cleaning and transformation on SQL
-**[see SQL queries](Insert link)**
+[see SQL queries](https://github.com/Codesoil/EDA-detect-different-usage-patterns-amongst-customer-groups/blob/main/Sql-queries-bike-share-EDA.sql)
 
 #### Preparation: For preparation I took consideration of the following, while not an exhaustive list of all actions taken, these were key:
 1. Securely storing data
