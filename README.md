@@ -29,9 +29,13 @@ This tableau story brings together all the analysis & visualisation done on tabl
 
 
 ## About the Data
-[Download Data](https://drive.google.com/drive/folders/1yzkQWU0d76jG9jes5i2RJ8jU8Gl0Ktn5?usp=share_link)
+[Download Original Data Set](https://drive.google.com/drive/folders/1yzkQWU0d76jG9jes5i2RJ8jU8Gl0Ktn5?usp=share_link)
+  |  [Download cleaned & transformed data](https://www.kaggle.com/datasets/chuxugorji/bike-share)
 
 We analyzed most recent data, 1 year record of all rides amounting to over 5million records. Data was stored in monthly sets as csv files on the company’s extraction site.  Due to the large amount of data for each month exceeding Excel and Power query’s capacity that informed the decision to use SQL, especially for appending all data, cleaning, and transformation for analysis. Further more selecting Tableau to be efficient with time spent on analysis and visualisation. Just to caveat that these data is currently open sourced hence why I can share and talk about this on my portfolio. 
+
+
+**p.s**: a column clock_in_hour (int) was used as an experimental field, clock_in_time is the useful column used in analysis
 
 ## Data Preparation, cleaning and transformation on SQL
 [see SQL queries](https://github.com/Codesoil/EDA-detect-different-usage-patterns-amongst-customer-groups/blob/main/Sql-queries-bike-share-EDA.sql)
@@ -44,7 +48,7 @@ We analyzed most recent data, 1 year record of all rides amounting to over 5mill
 5. Check data type and header for each variable is the same across each monthly record
 6. Final action, append all useful data using SQL UNION
 
-#### **Cleaning & Transformation:** We tested & cleaned for the following across our data set:
+#### **Cleaning & Transformation:** I tested & cleaned for the following across the data set:
 1. Truncated data
 2. Duplicate records
 3. Inconsistent spelling, extra spaces and characters
@@ -59,4 +63,15 @@ Further transformed data set to include new calculated fields to enable analysis
 4. Season of the year
 
 ## Analysis, Visualization and final executive story on Tableau
-[view full body of work on tableau public](https://public.tableau.com/views/bike-share-marketing/AverageTraveltimebyUserGroup?:language=en-GB&:display_count=n&:origin=viz_share_link)
+[view full body of analysis work on tableau public](https://public.tableau.com/views/bike-share-marketing/AverageTraveltimebyUserGroup?:language=en-GB&:display_count=n&:origin=viz_share_link)
+
+
+In our analysis we explored the following 
+1. if there's a difference in Average travel time between customer types, 
+2. if there's a difference in service demand trend based on the day of the week
+3. if there's a difference in service demand trend based on the time of the day
+4. if there's a difference in service demand trend based on the season of the year
+
+
+**p.s**: we didn't explore difference in bike type preference because the entry point to each bike type was flexxible for casual riders and fixed for annual subscribers, hence the underlying basis for usage would be biased.
+
