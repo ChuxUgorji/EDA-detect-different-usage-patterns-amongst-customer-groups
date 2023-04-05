@@ -1,5 +1,5 @@
 
-# **Exploratory Data Analysis: Detect how different customer types use a bike sharing service differently.**
+# **Exploratory Data Analysis: Detect how different customer types use a bike sharing service differently. Done with SQL (BigQuery) & Tableau**
 
 
 ## **Project Background & Deliverable** 
